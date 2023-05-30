@@ -4,8 +4,8 @@ object Form1: TForm1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Form1'
-  ClientHeight = 246
-  ClientWidth = 491
+  ClientHeight = 350
+  ClientWidth = 616
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,7 +26,7 @@ object Form1: TForm1
     OnKeyPress = Edit1KeyPress
   end
   object Edit2: TEdit
-    Left = 351
+    Left = 431
     Top = 8
     Width = 134
     Height = 21
@@ -34,7 +34,7 @@ object Form1: TForm1
     TabOrder = 1
   end
   object Button1: TButton
-    Left = 351
+    Left = 431
     Top = 47
     Width = 134
     Height = 25

@@ -1,9 +1,11 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
   Caption = 'Form1'
-  ClientHeight = 255
-  ClientWidth = 495
+  ClientHeight = 246
+  ClientWidth = 491
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,13 +20,17 @@ object Form1: TForm1
     Top = 8
     Width = 326
     Height = 21
+    ParentShowHint = False
+    ShowHint = False
     TabOrder = 0
+    OnKeyPress = Edit1KeyPress
   end
   object Edit2: TEdit
     Left = 351
     Top = 8
     Width = 134
     Height = 21
+    Enabled = False
     TabOrder = 1
   end
   object Button1: TButton
@@ -214,6 +220,24 @@ object Form1: TForm1
     Height = 25
     Caption = '^'
     TabOrder = 22
+    OnClick = Button2Click
+  end
+  object Button23: TButton
+    Left = 351
+    Top = 135
+    Width = 75
+    Height = 25
+    Caption = 'SIN'
+    TabOrder = 23
+    OnClick = Button2Click
+  end
+  object Button22: TButton
+    Left = 351
+    Top = 175
+    Width = 75
+    Height = 25
+    Caption = 'PI'
+    TabOrder = 24
     OnClick = Button2Click
   end
 end
