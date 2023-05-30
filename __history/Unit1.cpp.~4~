@@ -1,0 +1,67 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <stack>
+#include <vector>
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	std::string A;
+	AnsiString S;
+    S = Form1->Edit1->Text;
+	A = S.c_str();
+	std::vector<Pair> V, V1;
+	V = pairs(A);
+	V1 = V;
+	for (int i = 0; i < V.size(); ++i) {
+		std::string SubS = A.substr(V1[0].first + 1,V1[0].second - V1[0].first - 1);
+		float z = calculate(SubS);
+		A = A.replace(V1[0].first, V1[0].second - V1[0].first + 1, std::to_string(z));
+		V1 = pairs(A);
+	}
+	Form1->Edit2->Text = FloatToStr(calculate(A));
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	if(Sender == Button2) Form1->Edit1->Text += "1";
+	if(Sender == Button3) Form1->Edit1->Text += "2";
+	if(Sender == Button4) Form1->Edit1->Text += "3";
+	if(Sender == Button5) Form1->Edit1->Text += "4";
+	if(Sender == Button6) Form1->Edit1->Text += "5";
+	if(Sender == Button7) Form1->Edit1->Text += "6";
+	if(Sender == Button8) Form1->Edit1->Text += "7";
+	if(Sender == Button9) Form1->Edit1->Text += "8";
+	if(Sender == Button10) Form1->Edit1->Text += "9";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+	if(Sender == Button11) Form1->Edit1->Text += "0";
+    if(Sender == Button11) Form1->Edit1->Text += "0";
+}
+//---------------------------------------------------------------------------
+
