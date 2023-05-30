@@ -5,7 +5,7 @@ object Form1: TForm1
   BorderStyle = bsSingle
   Caption = 'Form1'
   ClientHeight = 350
-  ClientWidth = 616
+  ClientWidth = 514
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,7 +26,7 @@ object Form1: TForm1
     OnKeyPress = Edit1KeyPress
   end
   object Edit2: TEdit
-    Left = 431
+    Left = 359
     Top = 8
     Width = 134
     Height = 21
@@ -34,7 +34,7 @@ object Form1: TForm1
     TabOrder = 1
   end
   object Button1: TButton
-    Left = 431
+    Left = 359
     Top = 47
     Width = 134
     Height = 25
